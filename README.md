@@ -4,7 +4,7 @@ Physical AI 応用1講座 最終課題。アカウント：**【omnicampusアカ
 
 CRANE+ V2の6つの動作を、スクリプトで自動生成したお手本からACT（Action Chunking with Transformers）で学習した。日本語の指令はローカルLLMが動作の列に変換し、Gazebo上で順に実行する。数値はすべて [docs/](docs/) の実験ログと各 `results/` に記録した実測値である。
 
-- 提出動画（90秒、等速。指示デモはLLMの待ち時間のみカット）：[submission_ad.mp4](crane_act/videos/submission_ad.mp4)
+- 提出動画（2分10秒、等速。指令デモはLLMの応答待ちのみカット）：[submission_ad.mp4](crane_act/videos/submission_ad.mp4)
 - 説明資料：[docs/report.md](docs/report.md)
 
 ```text
@@ -99,7 +99,7 @@ python3 eval/run_eval.py --skills ../a_crane/skills.json --tag review40 --models
 
 ACTの最終チェックポイント6個（各17,030,228 bytes）を通常のgitで収録した。どれもGitHubの単一ファイル警告（50MB）未満で、cloneだけで同じ方策を確認できる。
 
-- [提出動画（90秒）](crane_act/videos/submission_ad.mp4)：しくみ → 6動作 → 講義手順との比較 → 日本語指令のデモ → 結果
+- [提出動画（2分10秒）](crane_act/videos/submission_ad.mp4)：日本語指令のデモ → 学習した6動作。説明は [説明資料](docs/report.md) にまとめた
 - [日本語指令のデモ（36.8秒）](crane_act/videos/demo_nl_commander.mp4)：指令 → LLMの判定・計画 → ACTスキルの逐次実行。範囲外は拒否、曖昧なものは確認
 - [学習した動作のまとめ（128.9秒）](crane_act/videos/montage_a_crane.mp4)：講義手順と改良版の比較、6スキル
 
