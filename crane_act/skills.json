@@ -1,0 +1,38 @@
+{
+  "bow": {
+    "model_path": "/workspace/a_crane/checkpoints/bow",
+    "description": "お辞儀: 肘(joint3)を前に倒して戻す",
+    "default_seconds": 6.2,
+    "trained_from": "bow_n50_phase"
+  },
+  "point_left": {
+    "model_path": "/workspace/a_crane/checkpoints/point_left",
+    "description": "左を指差す: 旋回(joint1)を左へ、腕を水平に伸ばして戻る",
+    "default_seconds": 6.4,
+    "trained_from": "point_left_n40_phase"
+  },
+  "point_right": {
+    "model_path": "/workspace/a_crane/checkpoints/point_right",
+    "description": "右を指差す: 旋回(joint1)を右へ、腕を水平に伸ばして戻る",
+    "default_seconds": 6.3,
+    "trained_from": "point_right_n40_phase"
+  },
+  "grip": {
+    "model_path": "/workspace/a_crane/checkpoints/grip",
+    "description": "つかむ: 前方へ手を伸ばしてグリッパを閉じ、持ち上げて戻り開く",
+    "default_seconds": 9.3,
+    "trained_from": "grip_n40_phase"
+  },
+  "wave": {
+    "model_path": "/workspace/a_crane/checkpoints/wave",
+    "description": "手を振る: 前腕を少し倒し、旋回(joint1)を左右に2往復",
+    "default_seconds": 10.8,
+    "trained_from": "wave_n40_phase_v4"
+  },
+  "nod": {
+    "model_path": "/workspace/a_crane/checkpoints/nod",
+    "description": "うなずき: 手首(joint4)を2回上下させる",
+    "default_seconds": 5.7,
+    "trained_from": "nod_n40_phase_v3"
+  }
+}

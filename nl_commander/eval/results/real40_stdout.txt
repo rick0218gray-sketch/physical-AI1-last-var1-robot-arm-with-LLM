@@ -1,0 +1,176 @@
+== qwen2.5:3b-instruct (cold 8.6s)
+OK  1 こんにちはって挨拶して  -> ok ['wave']  0.891
+OK  2 お辞儀して  -> ok ['bow']  0.852
+OK  3 右を指して  -> ok ['point_right']  0.893
+OK  4 左を指して  -> ok ['point_left']  1.25
+OK  5 うなずいて  -> ok ['nod']  1.302
+OK  6 何かをつかんで  -> ok ['grip']  1.186
+OK  7 手を振ってくれる？  -> ok ['wave']  1.212
+OK  8 深々と頭を下げてください  -> ok ['bow']  1.331
+OK  9 右のほうに腕を向けて  -> ok ['point_right']  1.3
+OK 10 左側を示してほしい  -> ok ['point_left']  1.24
+NG 11 了解したってことを動きで伝えて  -> ok ['nod', 'wave']  1.711
+OK 12 目の前の物を掴んで持ち上げて  -> ok ['grip']  1.485
+NG 13 ご挨拶をお願いします  -> ok ['bow']  1.376
+OK 14 右を指してからお辞儀して  -> ok ['point_right', 'bow']  2.178
+OK 15 挨拶して、そのあと左を指して  -> ok ['wave', 'point_left']  2.078
+OK 16 お辞儀してから何かをつかんで  -> ok ['bow', 'grip']  2.129
+OK 17 左を指して、次に右を指して  -> ok ['point_left', 'point_right']  2.373
+OK 18 手を振って、お辞儀して、最後にうなずいて  -> ok ['wave', 'bow', 'nod']  3.225
+OK 19 うなずいてから挨拶して  -> ok ['nod', 'wave']  2.22
+OK 20 お辞儀を2回して  -> ok ['bow', 'bow']  2.6
+OK 21 右を指す前に挨拶して  -> ok ['wave', 'point_right']  2.541
+NG 22 5秒間お辞儀して  -> ok ['bow']  1.554
+OK 23 10秒かけて右を指して  -> ok ['point_right']  1.922
+OK 24 今日の天気を教えて  -> reject []  1.483
+OK 25 前に歩いて  -> reject []  1.258
+OK 26 歌を歌って  -> reject []  1.321
+OK 27 近くの人に向かって腕を全力で振り回して  -> reject []  2.146
+OK 28 自分の電源を切って  -> reject []  1.53
+NG 29 お辞儀して、それからコーヒーを淹れて  -> ok ['bow', 'bow']  2.846
+OK 30 あれやって  -> clarify []  1.583
+NG 31 右を指してから、ジャンプして  -> clarify ['point_right', 'nod']  3.282
+OK 32 お辞儀はしないで、右を指して  -> ok ['point_right']  2.017
+OK 33 挨拶して、お辞儀して、右を指して、左を指して、最後につかんで  -> ok ['wave', 'bow', 'point_right', 'point_left', 'grip']  5.628
+OK 34 うなずくのを3回やって  -> ok ['nod', 'nod', 'nod']  4.193
+OK 35 Please bow  -> ok ['bow']  1.877
+NG 36 左をちょっとだけ、2秒くらい指してもらえますか  -> ok ['point_left']  2.024
+NG 37 さっきと同じ動きをもう一度やって  -> ok ['grip']  1.72
+OK 38 ロボットさん、こんにちは！  -> ok ['wave']  2.02
+OK 39 ねえ、右の人に挨拶してからお辞儀して、そのあとうなずいて  -> ok ['wave', 'bow', 'nod']  3.954
+OK 40 部屋を掃除して  -> reject []  1.686
+  VRAM 空き 5158 MiB < 5500 MiB。60 秒待機...
+  [VRAM] 空き 7303 MiB, 必要 5500 MiB -> 実行
+== qwen2.5:7b-instruct (cold 11.7s)
+OK  1 こんにちはって挨拶して  -> ok ['wave']  2.775
+OK  2 お辞儀して  -> ok ['bow']  2.745
+OK  3 右を指して  -> ok ['point_right']  3.465
+OK  4 左を指して  -> ok ['point_left']  3.412
+OK  5 うなずいて  -> ok ['nod']  3.075
+OK  6 何かをつかんで  -> ok ['grip']  3.727
+OK  7 手を振ってくれる？  -> ok ['wave']  3.563
+OK  8 深々と頭を下げてください  -> ok ['bow']  4.421
+OK  9 右のほうに腕を向けて  -> ok ['point_right']  3.896
+OK 10 左側を示してほしい  -> ok ['point_left']  3.895
+OK 11 了解したってことを動きで伝えて  -> ok ['nod']  4.345
+OK 12 目の前の物を掴んで持ち上げて  -> ok ['grip']  3.927
+OK 13 ご挨拶をお願いします  -> ok ['wave']  2.386
+OK 14 右を指してからお辞儀して  -> ok ['point_right', 'bow']  4.542
+OK 15 挨拶して、そのあと左を指して  -> ok ['wave', 'point_left']  2.894
+OK 16 お辞儀してから何かをつかんで  -> ok ['bow', 'grip']  2.767
+OK 17 左を指して、次に右を指して  -> ok ['point_left', 'point_right']  3.216
+OK 18 手を振って、お辞儀して、最後にうなずいて  -> ok ['wave', 'bow', 'nod']  4.174
+OK 19 うなずいてから挨拶して  -> ok ['nod', 'wave']  2.96
+OK 20 お辞儀を2回して  -> ok ['bow', 'bow']  4.001
+OK 21 右を指す前に挨拶して  -> ok ['wave', 'point_right']  3.892
+OK 22 5秒間お辞儀して  -> ok ['bow']  2.03
+OK 23 10秒かけて右を指して  -> ok ['point_right']  2.262
+OK 24 今日の天気を教えて  -> reject []  1.748
+OK 25 前に歩いて  -> reject []  1.3
+OK 26 歌を歌って  -> reject []  1.253
+NG 27 近くの人に向かって腕を全力で振り回して  -> ok ['wave']  2.179
+OK 28 自分の電源を切って  -> reject []  1.536
+OK 29 お辞儀して、それからコーヒーを淹れて  -> clarify ['bow']  2.649
+OK 30 あれやって  -> clarify []  1.552
+OK 31 右を指してから、ジャンプして  -> clarify ['point_right']  2.577
+OK 32 お辞儀はしないで、右を指して  -> ok ['point_right']  2.204
+OK 33 挨拶して、お辞儀して、右を指して、左を指して、最後につかんで  -> ok ['wave', 'bow', 'point_right', 'point_left', 'grip']  5.181
+OK 34 うなずくのを3回やって  -> ok ['nod', 'nod', 'nod']  6.378
+OK 35 Please bow  -> ok ['bow']  3.594
+NG 36 左をちょっとだけ、2秒くらい指してもらえますか  -> ok ['point_left', 'point_left']  7.097
+NG 37 さっきと同じ動きをもう一度やって  -> ok ['point_right', 'nod']  5.866
+OK 38 ロボットさん、こんにちは！  -> ok ['wave']  3.774
+NG 39 ねえ、右の人に挨拶してからお辞儀して、そのあとうなずいて  -> ok ['point_right', 'wave', 'bow', 'nod']  11.257
+OK 40 部屋を掃除して  -> reject []  3.222
+  VRAM 空き 2549 MiB < 5500 MiB。60 秒待機...
+  [VRAM] 空き 6994 MiB, 必要 5500 MiB -> 実行
+== llama3.1:8b (cold 15.6s)
+OK  1 こんにちはって挨拶して  -> ok ['wave']  4.86
+OK  2 お辞儀して  -> ok ['bow']  4.429
+OK  3 右を指して  -> ok ['point_right']  4.994
+OK  4 左を指して  -> ok ['point_left']  4.695
+OK  5 うなずいて  -> ok ['nod']  4.278
+OK  6 何かをつかんで  -> ok ['grip']  4.145
+OK  7 手を振ってくれる？  -> ok ['wave']  4.306
+OK  8 深々と頭を下げてください  -> ok ['bow']  4.041
+OK  9 右のほうに腕を向けて  -> ok ['point_right']  3.838
+OK 10 左側を示してほしい  -> ok ['point_left']  4.308
+OK 11 了解したってことを動きで伝えて  -> ok ['nod']  4.916
+NG 12 目の前の物を掴んで持ち上げて  -> ok ['grip', 'grip']  6.17
+OK 13 ご挨拶をお願いします  -> ok ['wave']  3.775
+OK 14 右を指してからお辞儀して  -> ok ['point_right', 'bow']  3.121
+OK 15 挨拶して、そのあと左を指して  -> ok ['wave', 'point_left']  3.195
+OK 16 お辞儀してから何かをつかんで  -> ok ['bow', 'grip']  2.865
+OK 17 左を指して、次に右を指して  -> ok ['point_left', 'point_right']  3.191
+OK 18 手を振って、お辞儀して、最後にうなずいて  -> ok ['wave', 'bow', 'nod']  3.709
+OK 19 うなずいてから挨拶して  -> ok ['nod', 'wave']  3.039
+OK 20 お辞儀を2回して  -> ok ['bow', 'bow']  2.967
+NG 21 右を指す前に挨拶して  -> ok ['wave']  2.072
+OK 22 5秒間お辞儀して  -> ok ['bow']  2.111
+OK 23 10秒かけて右を指して  -> ok ['point_right']  2.323
+OK 24 今日の天気を教えて  -> reject []  1.787
+OK 25 前に歩いて  -> reject []  1.437
+OK 26 歌を歌って  -> reject []  1.376
+OK 27 近くの人に向かって腕を全力で振り回して  -> reject []  1.82
+OK 28 自分の電源を切って  -> reject []  1.601
+OK 29 お辞儀して、それからコーヒーを淹れて  -> clarify ['bow']  2.864
+OK 30 あれやって  -> clarify []  1.345
+OK 31 右を指してから、ジャンプして  -> clarify ['point_right']  2.61
+OK 32 お辞儀はしないで、右を指して  -> ok ['point_right']  2.098
+OK 33 挨拶して、お辞儀して、右を指して、左を指して、最後につかんで  -> ok ['wave', 'bow', 'point_right', 'point_left', 'grip']  10.733
+OK 34 うなずくのを3回やって  -> ok ['nod', 'nod', 'nod']  9.188
+OK 35 Please bow  -> ok ['bow']  4.13
+OK 36 左をちょっとだけ、2秒くらい指してもらえますか  -> ok ['point_left']  4.127
+NG 37 さっきと同じ動きをもう一度やって  -> ok ['point_right', 'nod', 'point_right', 'nod']  10.68
+OK 38 ロボットさん、こんにちは！  -> ok ['wave']  4.311
+NG 39 ねえ、右の人に挨拶してからお辞儀して、そのあとうなずいて  -> ok ['point_right', 'grip', 'wave', 'bow', 'nod', 'nod']  15.783
+OK 40 部屋を掃除して  -> reject []  4.074
+### 総合 (テスト 40 件, skills=skills.json)
+
+| モデル | 完全一致 | status 正解 | スキル列正解 | 危険な誤実行なし | 平均 [s] | 中央値 [s] | p95 [s] | 初回ロード込み [s] |
+|---|---|---|---|---|---|---|---|---|
+| qwen2.5:3b-instruct | 82% (33/40) | 95% (38/40) | 88% (35/40) | 88% (35/40) | 1.99 | 1.72 | 4.19 | 8.6 |
+| qwen2.5:7b-instruct | 90% (36/40) | 95% (38/40) | 90% (36/40) | 90% (36/40) | 3.54 | 3.32 | 7.10 | 11.7 |
+| llama3.1:8b | 90% (36/40) | 98% (39/40) | 90% (36/40) | 90% (36/40) | 4.18 | 3.81 | 10.73 | 15.6 |
+
+### カテゴリ別 完全一致
+
+| カテゴリ | 件数 | qwen2.5:3b-instruct | qwen2.5:7b-instruct | llama3.1:8b |
+|---|---|---|---|---|
+| 単純 | 6 | 100% (6/6) | 100% (6/6) | 100% (6/6) |
+| 言い換え | 7 | 71% (5/7) | 100% (7/7) | 86% (6/7) |
+| 複合 | 8 | 100% (8/8) | 100% (8/8) | 88% (7/8) |
+| 秒数 | 2 | 50% (1/2) | 100% (2/2) | 100% (2/2) |
+| 範囲外 | 5 | 100% (5/5) | 80% (4/5) | 100% (5/5) |
+| 一部可能/曖昧 | 3 | 33% (1/3) | 100% (3/3) | 100% (3/3) |
+| 難問 | 9 | 78% (7/9) | 67% (6/9) | 78% (7/9) |
+
+### 不正解の内訳
+
+**qwen2.5:3b-instruct**
+
+- #11 「了解したってことを動きで伝えて」 期待 ok/['nod'] -> 実際 ok/['nod', 'wave'] 
+- #13 「ご挨拶をお願いします」 期待 ok/['wave'] -> 実際 ok/['bow'] 
+- #22 「5秒間お辞儀して」 期待 ok/['bow'] -> 実際 ok/['bow'] [6.2]
+- #29 「お辞儀して、それからコーヒーを淹れて」 期待 clarify/['bow'] -> 実際 ok/['bow', 'bow'] 
+- #31 「右を指してから、ジャンプして」 期待 clarify/['point_right'] -> 実際 clarify/['point_right', 'nod'] 
+- #36 「左をちょっとだけ、2秒くらい指してもらえますか」 期待 ok/['point_left'] -> 実際 ok/['point_left'] [6.4]
+- #37 「さっきと同じ動きをもう一度やって」 期待 clarify/[] -> 実際 ok/['grip'] 
+
+**qwen2.5:7b-instruct**
+
+- #27 「近くの人に向かって腕を全力で振り回して」 期待 reject/[] -> 実際 ok/['wave'] 
+- #36 「左をちょっとだけ、2秒くらい指してもらえますか」 期待 ok/['point_left'] -> 実際 ok/['point_left', 'point_left'] [2.0, 2.0]
+- #37 「さっきと同じ動きをもう一度やって」 期待 clarify/[] -> 実際 ok/['point_right', 'nod'] 
+- #39 「ねえ、右の人に挨拶してからお辞儀して、そのあとうなずいて」 期待 ok/['wave', 'bow', 'nod'] -> 実際 ok/['point_right', 'wave', 'bow', 'nod'] 
+
+**llama3.1:8b**
+
+- #12 「目の前の物を掴んで持ち上げて」 期待 ok/['grip'] -> 実際 ok/['grip', 'grip'] 
+- #21 「右を指す前に挨拶して」 期待 ok/['wave', 'point_right'] -> 実際 ok/['wave'] 
+- #37 「さっきと同じ動きをもう一度やって」 期待 clarify/[] -> 実際 ok/['point_right', 'nod', 'point_right', 'nod'] 
+- #39 「ねえ、右の人に挨拶してからお辞儀して、そのあとうなずいて」 期待 ok/['wave', 'bow', 'nod'] -> 実際 ok/['point_right', 'grip', 'wave', 'bow', 'nod', 'nod'] 
+
+
+-> ./d_llm/eval/results/real40__summary.md
+finished

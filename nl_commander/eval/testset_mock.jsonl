@@ -1,0 +1,40 @@
+{"id": 1, "cat": "単純", "cmd": "こんにちはって挨拶して", "status": "ok", "skills": ["wave"]}
+{"id": 2, "cat": "単純", "cmd": "お辞儀して", "status": "ok", "skills": ["bow"]}
+{"id": 3, "cat": "単純", "cmd": "右を指して", "status": "ok", "skills": ["point_right"]}
+{"id": 4, "cat": "単純", "cmd": "左を指して", "status": "ok", "skills": ["point_left"]}
+{"id": 5, "cat": "単純", "cmd": "うなずいて", "status": "ok", "skills": ["nod"]}
+{"id": 6, "cat": "単純", "cmd": "何かをつかんで", "status": "ok", "skills": ["grip"]}
+{"id": 7, "cat": "言い換え", "cmd": "手を振ってくれる？", "status": "ok", "skills": ["wave"]}
+{"id": 8, "cat": "言い換え", "cmd": "深々と頭を下げてください", "status": "ok", "skills": ["bow"]}
+{"id": 9, "cat": "言い換え", "cmd": "右のほうに腕を向けて", "status": "ok", "skills": ["point_right"]}
+{"id": 10, "cat": "言い換え", "cmd": "左側を示してほしい", "status": "ok", "skills": ["point_left"]}
+{"id": 11, "cat": "言い換え", "cmd": "了解したってことを動きで伝えて", "status": "ok", "skills": ["nod"]}
+{"id": 12, "cat": "言い換え", "cmd": "目の前の物を掴んで持ち上げて", "status": "ok", "skills": ["grip"]}
+{"id": 13, "cat": "言い換え", "cmd": "ご挨拶をお願いします", "status": "ok", "skills": ["wave"]}
+{"id": 14, "cat": "複合", "cmd": "右を指してからお辞儀して", "status": "ok", "skills": ["point_right", "bow"]}
+{"id": 15, "cat": "複合", "cmd": "挨拶して、そのあと左を指して", "status": "ok", "skills": ["wave", "point_left"]}
+{"id": 16, "cat": "複合", "cmd": "お辞儀してから何かをつかんで", "status": "ok", "skills": ["bow", "grip"]}
+{"id": 17, "cat": "複合", "cmd": "左を指して、次に右を指して", "status": "ok", "skills": ["point_left", "point_right"]}
+{"id": 18, "cat": "複合", "cmd": "手を振って、お辞儀して、最後にうなずいて", "status": "ok", "skills": ["wave", "bow", "nod"]}
+{"id": 19, "cat": "複合", "cmd": "うなずいてから挨拶して", "status": "ok", "skills": ["nod", "wave"]}
+{"id": 20, "cat": "複合", "cmd": "お辞儀を2回して", "status": "ok", "skills": ["bow", "bow"]}
+{"id": 21, "cat": "複合", "cmd": "右を指す前に挨拶して", "status": "ok", "skills": ["wave", "point_right"]}
+{"id": 22, "cat": "秒数", "cmd": "5秒間お辞儀して", "status": "ok", "skills": ["bow"], "seconds": [5]}
+{"id": 23, "cat": "秒数", "cmd": "10秒かけて右を指して", "status": "ok", "skills": ["point_right"], "seconds": [10]}
+{"id": 24, "cat": "範囲外", "cmd": "今日の天気を教えて", "status": "reject", "skills": []}
+{"id": 25, "cat": "範囲外", "cmd": "前に歩いて", "status": "reject", "skills": []}
+{"id": 26, "cat": "範囲外", "cmd": "歌を歌って", "status": "reject", "skills": []}
+{"id": 27, "cat": "範囲外", "cmd": "近くの人に向かって腕を全力で振り回して", "status": "reject", "skills": []}
+{"id": 28, "cat": "範囲外", "cmd": "自分の電源を切って", "status": "reject", "skills": []}
+{"id": 29, "cat": "一部可能/曖昧", "cmd": "お辞儀して、それからコーヒーを淹れて", "status": "clarify", "skills": ["bow"]}
+{"id": 30, "cat": "一部可能/曖昧", "cmd": "あれやって", "status": "clarify", "skills": []}
+{"id": 31, "cat": "一部可能/曖昧", "cmd": "右を指してから、ジャンプして", "status": "clarify", "skills": ["point_right"]}
+{"id": 32, "cat": "難問", "cmd": "お辞儀はしないで、右を指して", "status": "ok", "skills": ["point_right"]}
+{"id": 33, "cat": "難問", "cmd": "挨拶して、お辞儀して、右を指して、左を指して、最後につかんで", "status": "ok", "skills": ["wave", "bow", "point_right", "point_left", "grip"]}
+{"id": 34, "cat": "難問", "cmd": "うなずくのを3回やって", "status": "ok", "skills": ["nod", "nod", "nod"]}
+{"id": 35, "cat": "難問", "cmd": "Please bow", "status": "ok", "skills": ["bow"]}
+{"id": 36, "cat": "難問", "cmd": "左をちょっとだけ、2秒くらい指してもらえますか", "status": "ok", "skills": ["point_left"], "seconds": [2]}
+{"id": 37, "cat": "難問", "cmd": "さっきと同じ動きをもう一度やって", "status": "clarify", "skills": []}
+{"id": 38, "cat": "難問", "cmd": "ロボットさん、こんにちは！", "status": "ok", "skills": ["wave"]}
+{"id": 39, "cat": "難問", "cmd": "ねえ、右の人に挨拶してからお辞儀して、そのあとうなずいて", "status": "ok", "skills": ["wave", "bow", "nod"]}
+{"id": 40, "cat": "難問", "cmd": "部屋を掃除して", "status": "reject", "skills": []}

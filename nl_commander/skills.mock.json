@@ -1,0 +1,32 @@
+{
+ "bow": {
+  "model_path": "(mock)",
+  "description": "お辞儀: 肘(joint3)を前に倒して戻す",
+  "default_seconds": 8
+ },
+ "nod": {
+  "model_path": "(mock)",
+  "description": "うなずき: 手首(joint4)を2回上下させる",
+  "default_seconds": 8
+ },
+ "wave": {
+  "model_path": "(mock)",
+  "description": "手を振る: 前腕を少し倒し、旋回(joint1)を左右に2往復",
+  "default_seconds": 8
+ },
+ "point_left": {
+  "model_path": "(mock)",
+  "description": "左を指差す: 旋回(joint1)を左へ、腕を水平に伸ばして戻る",
+  "default_seconds": 8
+ },
+ "point_right": {
+  "model_path": "(mock)",
+  "description": "右を指差す: 旋回(joint1)を右へ、腕を水平に伸ばして戻る",
+  "default_seconds": 8
+ },
+ "grip": {
+  "model_path": "(mock)",
+  "description": "つかむ: 前方へ手を伸ばしてグリッパを閉じ、持ち上げて戻り開く",
+  "default_seconds": 8
+ }
+}

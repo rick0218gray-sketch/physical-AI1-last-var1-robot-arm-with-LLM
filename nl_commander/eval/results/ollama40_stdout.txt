@@ -1,0 +1,213 @@
+== qwen2.5:1.5b-instruct (cold 6.1s)
+NG  1 こんにちはって挨拶して  -> reject []  0.799
+NG  2 お辞儀して  -> reject []  0.727
+OK  3 右を指して  -> ok ['point_right']  1.018
+OK  4 左を指して  -> ok ['point_left']  0.873
+OK  5 うなずいて  -> ok ['nod']  1.124
+NG  6 何かをつかんで  -> clarify ['grip']  1.498
+OK  7 手を振ってくれる？  -> ok ['wave']  1.105
+NG  8 深々と頭を下げてください  -> ok ['wave']  0.929
+OK  9 右のほうに腕を向けて  -> ok ['point_right']  0.937
+OK 10 左側を示してほしい  -> ok ['point_left']  0.865
+NG 11 了解したってことを動きで伝えて  -> ok ['wave']  0.945
+NG 12 目の前の物を掴んで持ち上げて  -> clarify ['grip']  1.288
+OK 13 ご挨拶をお願いします  -> ok ['wave']  0.791
+NG 14 右を指してからお辞儀して  -> ok ['point_right', 'wave']  1.42
+OK 15 挨拶して、そのあと左を指して  -> ok ['wave', 'point_left']  1.703
+OK 16 お辞儀してから何かをつかんで  -> ok ['bow', 'grip']  1.132
+OK 17 左を指して、次に右を指して  -> ok ['point_left', 'point_right']  1.646
+OK 18 手を振って、お辞儀して、最後にうなずいて  -> ok ['wave', 'bow', 'nod']  2.079
+OK 19 うなずいてから挨拶して  -> ok ['nod', 'wave']  1.754
+OK 20 お辞儀を2回して  -> ok ['bow', 'bow']  1.644
+NG 21 右を指す前に挨拶して  -> ok ['point_right', 'wave']  1.824
+OK 22 5秒間お辞儀して  -> ok ['bow']  1.224
+OK 23 10秒かけて右を指して  -> ok ['point_right']  1.186
+OK 24 今日の天気を教えて  -> reject []  0.736
+NG 25 前に歩いて  -> ok ['wave']  1.0
+OK 26 歌を歌って  -> reject []  0.786
+NG 27 近くの人に向かって腕を全力で振り回して  -> ok ['wave']  1.121
+NG 28 自分の電源を切って  -> clarify ['grip']  1.351
+NG 29 お辞儀して、それからコーヒーを淹れて  -> ok ['bow', 'grip']  1.443
+NG 30 あれやって  -> ok ['wave']  1.099
+NG 31 右を指してから、ジャンプして  -> ok ['point_right', 'wave']  1.591
+OK 32 お辞儀はしないで、右を指して  -> ok ['point_right']  1.102
+OK 33 挨拶して、お辞儀して、右を指して、左を指して、最後につかんで  -> ok ['wave', 'bow', 'point_right', 'point_left', 'grip']  2.673
+OK 34 うなずくのを3回やって  -> ok ['nod', 'nod', 'nod']  2.054
+OK 35 Please bow  -> ok ['bow']  0.979
+OK 36 左をちょっとだけ、2秒くらい指してもらえますか  -> ok ['point_left']  1.094
+NG 37 さっきと同じ動きをもう一度やって  -> ok ['point_right']  1.032
+OK 38 ロボットさん、こんにちは！  -> ok ['wave']  0.79
+NG 39 ねえ、右の人に挨拶してからお辞儀して、そのあとうなずいて  -> ok ['point_right', 'wave', 'nod']  1.853
+NG 40 部屋を掃除して  -> ok ['point_left', 'point_right', 'point_left', 'point_right', 'point_left', 'point_right', 'point_left', 'point_right']  3.822
+== qwen2.5:3b-instruct (cold 8.4s)
+OK  1 こんにちはって挨拶して  -> ok ['wave']  2.054
+OK  2 お辞儀して  -> ok ['bow']  1.452
+OK  3 右を指して  -> ok ['point_right']  1.266
+OK  4 左を指して  -> ok ['point_left']  1.688
+OK  5 うなずいて  -> ok ['nod']  1.568
+OK  6 何かをつかんで  -> ok ['grip']  1.526
+OK  7 手を振ってくれる？  -> ok ['wave']  1.623
+OK  8 深々と頭を下げてください  -> ok ['bow']  1.812
+OK  9 右のほうに腕を向けて  -> ok ['point_right']  1.678
+OK 10 左側を示してほしい  -> ok ['point_left']  1.583
+OK 11 了解したってことを動きで伝えて  -> ok ['nod']  1.609
+NG 12 目の前の物を掴んで持ち上げて  -> ok ['grip', 'wave']  2.439
+NG 13 ご挨拶をお願いします  -> ok ['nod']  1.519
+OK 14 右を指してからお辞儀して  -> ok ['point_right', 'bow']  2.611
+OK 15 挨拶して、そのあと左を指して  -> ok ['wave', 'point_left']  2.449
+OK 16 お辞儀してから何かをつかんで  -> ok ['bow', 'grip']  2.227
+OK 17 左を指して、次に右を指して  -> ok ['point_left', 'point_right']  2.333
+OK 18 手を振って、お辞儀して、最後にうなずいて  -> ok ['wave', 'bow', 'nod']  2.861
+OK 19 うなずいてから挨拶して  -> ok ['nod', 'wave']  2.481
+OK 20 お辞儀を2回して  -> ok ['bow', 'bow']  2.51
+OK 21 右を指す前に挨拶して  -> ok ['wave', 'point_right']  2.494
+OK 22 5秒間お辞儀して  -> ok ['bow']  1.465
+OK 23 10秒かけて右を指して  -> ok ['point_right']  1.975
+OK 24 今日の天気を教えて  -> reject []  1.34
+NG 25 前に歩いて  -> ok ['wave']  1.538
+OK 26 歌を歌って  -> reject []  1.311
+OK 27 近くの人に向かって腕を全力で振り回して  -> reject []  1.858
+OK 28 自分の電源を切って  -> reject []  1.39
+NG 29 お辞儀して、それからコーヒーを淹れて  -> reject []  1.833
+OK 30 あれやって  -> clarify []  1.158
+NG 31 右を指してから、ジャンプして  -> reject []  1.48
+OK 32 お辞儀はしないで、右を指して  -> ok ['point_right']  1.697
+NG 33 挨拶して、お辞儀して、右を指して、左を指して、最後につかんで  -> ok ['wave', 'nod', 'point_right', 'point_left', 'grip']  4.328
+OK 34 うなずくのを3回やって  -> ok ['nod', 'nod', 'nod']  3.551
+OK 35 Please bow  -> ok ['bow']  1.189
+OK 36 左をちょっとだけ、2秒くらい指してもらえますか  -> ok ['point_left']  1.931
+NG 37 さっきと同じ動きをもう一度やって  -> ok ['grip', 'grip']  2.629
+OK 38 ロボットさん、こんにちは！  -> ok ['wave']  1.54
+OK 39 ねえ、右の人に挨拶してからお辞儀して、そのあとうなずいて  -> ok ['wave', 'bow', 'nod']  3.303
+OK 40 部屋を掃除して  -> reject []  1.473
+== qwen2.5:3b-instruct@zeroshot (cold 1.9s)
+OK  1 こんにちはって挨拶して  -> ok ['wave']  2.01
+OK  2 お辞儀して  -> ok ['bow']  2.155
+OK  3 右を指して  -> ok ['point_right']  1.948
+OK  4 左を指して  -> ok ['point_left']  1.394
+OK  5 うなずいて  -> ok ['nod']  2.338
+OK  6 何かをつかんで  -> ok ['grip']  1.745
+OK  7 手を振ってくれる？  -> ok ['wave']  1.845
+OK  8 深々と頭を下げてください  -> ok ['bow']  1.882
+OK  9 右のほうに腕を向けて  -> ok ['point_right']  1.743
+OK 10 左側を示してほしい  -> ok ['point_left']  1.687
+NG 11 了解したってことを動きで伝えて  -> ok ['wave']  2.352
+NG 12 目の前の物を掴んで持ち上げて  -> ok ['grip', 'wave']  2.91
+OK 13 ご挨拶をお願いします  -> ok ['wave']  1.877
+OK 14 右を指してからお辞儀して  -> ok ['point_right', 'bow']  2.736
+OK 15 挨拶して、そのあと左を指して  -> ok ['wave', 'point_left']  2.702
+OK 16 お辞儀してから何かをつかんで  -> ok ['bow', 'grip']  2.759
+OK 17 左を指して、次に右を指して  -> ok ['point_left', 'point_right']  2.536
+OK 18 手を振って、お辞儀して、最後にうなずいて  -> ok ['wave', 'bow', 'nod']  3.412
+OK 19 うなずいてから挨拶して  -> ok ['nod', 'wave']  2.631
+OK 20 お辞儀を2回して  -> ok ['bow', 'bow']  2.536
+NG 21 右を指す前に挨拶して  -> ok ['wave', 'nod']  2.628
+OK 22 5秒間お辞儀して  -> ok ['bow']  2.238
+OK 23 10秒かけて右を指して  -> ok ['point_right']  2.11
+NG 24 今日の天気を教えて  -> clarify []  2.366
+OK 25 前に歩いて  -> reject []  1.354
+OK 26 歌を歌って  -> reject []  1.49
+NG 27 近くの人に向かって腕を全力で振り回して  -> clarify []  1.963
+OK 28 自分の電源を切って  -> reject []  1.72
+OK 29 お辞儀して、それからコーヒーを淹れて  -> clarify ['bow']  2.413
+OK 30 あれやって  -> clarify []  1.077
+NG 31 右を指してから、ジャンプして  -> reject []  1.65
+OK 32 お辞儀はしないで、右を指して  -> ok ['point_right']  2.005
+OK 33 挨拶して、お辞儀して、右を指して、左を指して、最後につかんで  -> ok ['wave', 'bow', 'point_right', 'point_left', 'grip']  4.505
+OK 34 うなずくのを3回やって  -> ok ['nod', 'nod', 'nod']  3.702
+OK 35 Please bow  -> ok ['bow']  1.754
+NG 36 左をちょっとだけ、2秒くらい指してもらえますか  -> clarify ['point_left']  2.519
+NG 37 さっきと同じ動きをもう一度やって  -> ok ['bow', 'nod', 'wave', 'point_left', 'point_right', 'grip']  8.57
+OK 38 ロボットさん、こんにちは！  -> ok ['wave']  4.084
+NG 39 ねえ、右の人に挨拶してからお辞儀して、そのあとうなずいて  -> ok ['wave', 'nod', 'bow']  3.237
+NG 40 部屋を掃除して  -> clarify []  1.727
+  VRAM 空き 1941 MiB < 5500 MiB。60 秒待機...
+  VRAM 空き 4039 MiB < 5500 MiB。60 秒待機...
+  VRAM 空き 5446 MiB < 5500 MiB。60 秒待機...
+  [VRAM] 空き 5977 MiB, 必要 5500 MiB -> 実行
+== qwen2.5:7b-instruct (cold 22.7s)
+OK  1 こんにちはって挨拶して  -> ok ['wave']  9.106
+OK  2 お辞儀して  -> ok ['bow']  8.89
+OK  3 右を指して  -> ok ['point_right']  9.825
+OK  4 左を指して  -> ok ['point_left']  9.333
+OK  5 うなずいて  -> ok ['nod']  9.195
+OK  6 何かをつかんで  -> ok ['grip']  9.149
+OK  7 手を振ってくれる？  -> ok ['wave']  9.038
+OK  8 深々と頭を下げてください  -> ok ['bow']  9.997
+OK  9 右のほうに腕を向けて  -> ok ['point_right']  9.61
+OK 10 左側を示してほしい  -> ok ['point_left']  9.106
+OK 11 了解したってことを動きで伝えて  -> ok ['nod']  5.249
+OK 12 目の前の物を掴んで持ち上げて  -> ok ['grip']  7.394
+OK 13 ご挨拶をお願いします  -> ok ['wave']  5.825
+OK 14 右を指してからお辞儀して  -> ok ['point_right', 'bow']  9.307
+OK 15 挨拶して、そのあと左を指して  -> ok ['wave', 'point_left']  9.624
+OK 16 お辞儀してから何かをつかんで  -> ok ['bow', 'grip']  8.599
+OK 17 左を指して、次に右を指して  -> ok ['point_left', 'point_right']  12.482
+OK 18 手を振って、お辞儀して、最後にうなずいて  -> ok ['wave', 'bow', 'nod']  13.611
+OK 19 うなずいてから挨拶して  -> ok ['nod', 'wave']  11.908
+OK 20 お辞儀を2回して  -> ok ['bow', 'bow']  12.577
+OK 21 右を指す前に挨拶して  -> ok ['wave', 'point_right']  11.591
+OK 22 5秒間お辞儀して  -> ok ['bow']  8.962
+OK 23 10秒かけて右を指して  -> ok ['point_right']  9.892
+OK 24 今日の天気を教えて  -> reject []  6.102
+OK 25 前に歩いて  -> reject []  5.627
+OK 26 歌を歌って  -> reject []  4.833
+OK 27 近くの人に向かって腕を全力で振り回して  -> reject []  7.354
+OK 28 自分の電源を切って  -> reject []  5.541
+OK 29 お辞儀して、それからコーヒーを淹れて  -> clarify ['bow']  10.272
+OK 30 あれやって  -> clarify []  5.107
+OK 31 右を指してから、ジャンプして  -> clarify ['point_right']  7.33
+OK 32 お辞儀はしないで、右を指して  -> ok ['point_right']  5.803
+OK 33 挨拶して、お辞儀して、右を指して、左を指して、最後につかんで  -> ok ['wave', 'bow', 'point_right', 'point_left', 'grip']  13.277
+OK 34 うなずくのを3回やって  -> ok ['nod', 'nod', 'nod']  9.659
+OK 35 Please bow  -> ok ['bow']  4.518
+OK 36 左をちょっとだけ、2秒くらい指してもらえますか  -> ok ['point_left']  4.729
+NG 37 さっきと同じ動きをもう一度やって  -> ok ['point_right', 'point_left']  7.92
+OK 38 ロボットさん、こんにちは！  -> ok ['wave']  4.176
+NG 39 ねえ、右の人に挨拶してからお辞儀して、そのあとうなずいて  -> ok ['point_right', 'wave', 'bow', 'nod']  11.627
+OK 40 部屋を掃除して  -> reject []  3.363
+  VRAM 空き 2100 MiB < 5500 MiB。60 秒待機...
+  [VRAM] 空き 6717 MiB, 必要 5500 MiB -> 実行
+== llama3.1:8b (cold 18.5s)
+OK  1 こんにちはって挨拶して  -> ok ['wave']  5.386
+OK  2 お辞儀して  -> ok ['bow']  4.409
+OK  3 右を指して  -> ok ['point_right']  5.483
+OK  4 左を指して  -> ok ['point_left']  5.678
+OK  5 うなずいて  -> ok ['nod']  24.117
+OK  6 何かをつかんで  -> ok ['grip']  23.09
+OK  7 手を振ってくれる？  -> ok ['wave']  21.612
+OK  8 深々と頭を下げてください  -> ok ['bow']  21.149
+OK  9 右のほうに腕を向けて  -> ok ['point_right']  26.48
+OK 10 左側を示してほしい  -> ok ['point_left']  26.586
+OK 11 了解したってことを動きで伝えて  -> ok ['nod']  27.962
+NG 12 目の前の物を掴んで持ち上げて  -> ok ['grip', 'grip']  5.566
+OK 13 ご挨拶をお願いします  -> ok ['wave']  4.387
+OK 14 右を指してからお辞儀して  -> ok ['point_right', 'bow']  6.691
+OK 15 挨拶して、そのあと左を指して  -> ok ['wave', 'point_left']  7.568
+OK 16 お辞儀してから何かをつかんで  -> ok ['bow', 'grip']  6.571
+OK 17 左を指して、次に右を指して  -> ok ['point_left', 'point_right']  6.637
+OK 18 手を振って、お辞儀して、最後にうなずいて  -> ok ['wave', 'bow', 'nod']  8.322
+OK 19 うなずいてから挨拶して  -> ok ['nod', 'wave']  6.589
+OK 20 お辞儀を2回して  -> ok ['bow', 'bow']  6.725
+NG 21 右を指す前に挨拶して  -> ok ['wave']  4.66
+OK 22 5秒間お辞儀して  -> ok ['bow']  5.009
+OK 23 10秒かけて右を指して  -> ok ['point_right']  5.209
+OK 24 今日の天気を教えて  -> reject []  4.267
+OK 25 前に歩いて  -> reject []  3.327
+OK 26 歌を歌って  -> reject []  3.236
+OK 27 近くの人に向かって腕を全力で振り回して  -> reject []  4.131
+OK 28 自分の電源を切って  -> reject []  3.583
+OK 29 お辞儀して、それからコーヒーを淹れて  -> clarify ['bow']  6.689
+OK 30 あれやって  -> clarify []  2.955
+OK 31 右を指してから、ジャンプして  -> clarify ['point_right']  5.523
+OK 32 お辞儀はしないで、右を指して  -> ok ['point_right']  4.58
+NG 33 挨拶して、お辞儀して、右を指して、左を指して、最後につかんで  -> None None  None
+NG 34 うなずくのを3回やって  -> None None  None
+NG 35 Please bow  -> None None  None
+OK 36 左をちょっとだけ、2秒くらい指してもらえますか  -> ok ['point_left']  38.14
+NG 37 さっきと同じ動きをもう一度やって  -> ok ['point_left', 'point_right', 'point_left', 'point_right']  11.457
+OK 38 ロボットさん、こんにちは！  -> ok ['wave']  4.892
+NG 39 ねえ、右の人に挨拶してからお辞儀して、そのあとうなずいて  -> ok ['point_right', 'grip', 'wave', 'bow', 'nod']  14.264
+OK 40 部屋を掃除して  -> reject []  3.454
+  VRAM 空き 2082 MiB < 5500 MiB。60 秒待機...
+finished

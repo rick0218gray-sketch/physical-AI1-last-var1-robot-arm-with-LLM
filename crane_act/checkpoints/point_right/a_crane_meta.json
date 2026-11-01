@@ -1,0 +1,11 @@
+{
+ "env_mode": "phase",
+ "dataset": "~/dataset/lerobot_dataset/point_right_n40_phase",
+ "steps": 2500,
+ "batch_size": 32,
+ "model_size": "small",
+ "lag_aug": 8,
+ "state_noise": 0.0,
+ "min_std": 0.05,
+ "chunk_size": 16
+}

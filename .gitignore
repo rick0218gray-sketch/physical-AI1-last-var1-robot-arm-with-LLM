@@ -1,0 +1,15 @@
+# Generated environments, caches, raw recordings and datasets
+**/.venv/
+**/venv/
+**/__pycache__/
+*.py[cod]
+**/.pixi/
+**/rosbags/
+**/lerobot_dataset/
+*.db3
+*.mcap
+.env
+.env.*
+# Do not blanket-ignore logs, .pt or .safetensors: selected evidence and final policies are submitted.
+*.tmp
+*.orig

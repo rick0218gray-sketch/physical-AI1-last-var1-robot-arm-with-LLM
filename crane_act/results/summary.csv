@@ -1,0 +1,21 @@
+experiment,skill,model,demos,observation,runner,trials,success,note
+baseline_lecture,bow,crane_plus_pekori_act (lecture train.py),20,state (lecture),lecture infer.py (wall-clock 20Hz),3,0,creeps / does not return
+baseline_improved_runner,bow,crane_plus_pekori_act (lecture train.py),20,state (lecture),skill_runner (sim-clock 20Hz),5,5,
+ablation_obs,bow,bow_n50_state,50,state (trimmed+lag aug),skill_runner,5,0,never starts (start/end ambiguity)
+final,bow,bow_n50_phase,50,phase t,skill_runner,5,5,
+datasize,bow,bow_n10_phase,10,phase t,skill_runner,5,5,
+datasize,bow,bow_n30_phase,30,phase t,skill_runner,5,5,
+final,point_left,point_left_n40_phase,40,phase t,skill_runner,5,5,
+final,point_right,point_right_n40_phase,40,phase t,skill_runner,5,5,
+final,grip,grip_n40_phase,40,phase t,skill_runner,5,5,
+v1_random_tempo,wave,wave_n40_phase,40,phase t,skill_runner,3,0,demos themselves pass criterion only 7/40
+v1_random_tempo,nod,nod_n40_phase,40,phase t,skill_runner,3,0,demos pass 10/40
+v2_wallclock_tempo,wave,wave_n40_phase_v2,40,phase t,skill_runner,3,0,
+v3_simclock_tempo,wave,wave_n20_phase_v3,20,phase t,skill_runner closed loop,3,0,phase drift from state
+v3_simclock_tempo,wave,wave_n20_phase_v3,20,phase t,skill_runner chunk_exec=8,5,5,
+datasize,wave,wave_n10_phase_v3,10,phase t,skill_runner chunk_exec=8,5,4,
+final,wave,wave_n40_phase_v3,40,phase t,skill_runner chunk_exec=8,5,5,
+final,nod,nod_n40_phase_v3,40,phase t,skill_runner chunk_exec=8,5,5,criterion valley 0.15
+v4_slow_large,wave,wave_n40_phase_v4,40,phase t,skill_runner chunk_exec=8,5,5,2nd swing +0.53..0.55 (v3: +0.30..0.35); demos pass 40/40
+sequence_before,point_left>wave / bow>nod / grip>wave,v3,40,phase t,skill_server,5x3,15/15 each step,also 5/5 under GPU load
+sequence_after,point_left>wave / bow>nod / grip>wave,v4,40,phase t,skill_server,5x3,15/15 each step,
