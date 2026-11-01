@@ -1,6 +1,6 @@
 # 日本語の指令でロボットアームの学習済みスキルを順に動かす
 
-Physical AI 応用1講座 最終課題。アカウント：**【omnicampusアカウント名】**
+Physical AI 応用1講座 最終課題。アカウント：**Rick0218**
 
 CRANE+ V2の6つの動作を、スクリプトで自動生成したお手本からACT（Action Chunking with Transformers）で学習した。日本語の指令はローカルLLMが動作の列に変換し、Gazebo上で順に実行する。数値はすべて [docs/](docs/) の実験ログと各 `results/` に記録した実測値である。
 
